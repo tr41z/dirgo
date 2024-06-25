@@ -3,7 +3,6 @@ package main
 import (
 	"GoScan/internal/scanner"
 	"GoScan/internal/utils"
-	// "GoScan/pkg/config"
 	"flag"
 	"fmt"
 )
