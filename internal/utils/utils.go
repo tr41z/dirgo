@@ -10,21 +10,20 @@ import (
 func ConstructPayload(baseURL string, wordlist string) []string {
 	var payloads []string
 
-    file, err := os.Open(wordlist)
-    if err != nil {
-        log.Fatal(err)
-    }
- 
-    Scanner := bufio.NewScanner(file)
-    Scanner.Split(bufio.ScanWords)
- 
-    for Scanner.Scan() {
-        payload := baseURL + "/" + string(Scanner.Text())
+	file, err := os.Open(wordlist)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		payload := baseURL + "/" + scanner.Text()
 		payloads = append(payloads, payload)
-    }
-    if err := Scanner.Err(); err != nil {
-        log.Fatal(err)
-    }
+	}
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
 
 	return payloads
 }
