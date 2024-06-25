@@ -29,5 +29,4 @@ jobs:
         env:
           IMAGE_TAG: latest
         run: |
-          docker buildx build --platform linux/amd64,linux/arm64 -t tr4iz/goscan:${IMAGE_TAG} .
-          docker push tr4iz/goscan:${IMAGE_TAG}
+          docker buildx build --platform linux/amd64,linux/arm64 -t tr4iz/goscan:${IMAGE_TAG} . --push
