@@ -1,5 +1,3 @@
-## 🛑 NOT ALL FEATURES ARE IMPLEMENTED (PROJECT IN PROGRESS)
-
 # 🎯 GoScan
 
 ## ⚡ Introduction
