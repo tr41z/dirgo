@@ -2,6 +2,8 @@ package main
 
 import (
 	"GoScan/internal/scanner"
+	"GoScan/internal/utils"
+	// "GoScan/pkg/config"
 	"flag"
 	"fmt"
 )
@@ -24,5 +26,6 @@ func main() {
 		return
 	}
 
+	utils.PrintHeaders()
 	scanner.ScanForDirectories(*urlFlag, *wordlistFlag, *statusFlag, *threadsFlag)
 }

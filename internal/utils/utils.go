@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"GoScan/pkg/config"
 	"bufio"
 	"log"
 	"os"
@@ -26,4 +27,8 @@ func ConstructPayload(baseURL string, wordlist string) []string {
 	}
 
 	return payloads
+}
+
+func PrintHeaders() {
+	config.Magenta.Printf("%-55s%-10s%-10s\n", "URL", "LENGTH", "STATUS_CODE\n-----------------------------------------------------------------------------")
 }

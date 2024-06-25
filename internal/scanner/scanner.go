@@ -2,6 +2,7 @@ package scanner
 
 import (
 	"GoScan/internal/utils"
+	"GoScan/pkg/config"
 	"fmt"
 	"net/http"
 	"sync"
@@ -31,8 +32,7 @@ func ScanForDirectories(baseURL string, wordlist string, statusCode int, threads
 			defer resp.Body.Close()
 
 			if resp.StatusCode == statusCode {
-				fmt.Println(payload)
-				fmt.Println(resp.StatusCode)
+				config.Blue.Printf("%-55s%-10d%-10d\n", payload, int(resp.ContentLength), int(resp.StatusCode))
 			}
 
 			time.Sleep(delay)
