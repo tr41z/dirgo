@@ -34,13 +34,13 @@ Options:
 -u, --url <URL>: Target URL
 -w, --wordlist <wordlist>: Path to the wordlist file
 -t, --threads <number>: Number of concurrent threads (default: 10)
--H, --header <header>: Custom header to include in requests (e.g., "Authorization: Bearer token")
+-s, --status <number>: Target status code (default: 200)
 -o, --output <file>: Output results to a file
 ```
 
 Example:
 ```bash
-./GoScan -u http://example.com -w wordlist.txt -t 20 -H "Authorization: Bearer token" -o results.txt
+./GoScan -u http://example.com:8080 -w wordlist.txt -t 20 -s 403 -o results.txt
 ```
 
 ## ⚠️ Disclaimer
