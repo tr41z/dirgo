@@ -45,7 +45,7 @@ Example:
 
 ### Important Notice:
 
-#### Running GoScan against targets without explicit permission is illegal. Ensure you have proper authorization before using this tool on any system. Responsibility: The developers of GoScan are not responsible for any misuse or damage caused by this tool. Use it responsibly and ethically.
+#### Running GoScan against targets without explicit permission is illegal. Ensure you have proper authorization before using this tool on any system. The developers of GoScan are not responsible for any misuse or damage caused by this tool. Use it responsibly and ethically.
 
 ---
 
