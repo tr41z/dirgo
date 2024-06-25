@@ -23,5 +23,5 @@ jobs:
         env:
           IMAGE_TAG: latest  # Update with your preferred tag
         run: |
-          docker build -t tr4iz/GoScan:${IMAGE_TAG} .
-          docker push tr4iz/GoScan:${IMAGE_TAG}
+          docker build -t tr4iz/goscan:${IMAGE_TAG} .
+          docker push tr4iz/goscan:${IMAGE_TAG}
