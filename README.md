@@ -21,7 +21,7 @@
 ```bash
 git clone https://github.com/tr41z/GoScan.git
 cd GoScan/cmd/main
-go build main.go
+go build
 ```
 
 ## 📝 Usage
