@@ -33,7 +33,7 @@ Options:
 -w, --wordlist <wordlist>: Path to the wordlist file
 -t, --threads <number>: Number of concurrent threads (default: 10)
 -s, --status <number>: Target status code (default: 200)
--o, --output <file>: Output results to a file
+-o, --output <file>: Output results to a file ::NOT IMPLEMENTED YET::
 ```
 
 Example:
