@@ -1,8 +1,8 @@
-# 🎯 GoScan
+# 🎯 dirgo
 
 ## ⚡ Introduction
 
-#### **GoScan is a powerful and efficient directory enumeration tool written in Go. It is designed to help security professionals identify hidden files and directories on web servers, providing insights that can assist in security assessments and vulnerability research.**
+#### **dirgo is a powerful and efficient directory enumeration tool written in Go. It is designed to help security professionals identify hidden files and directories on web servers, providing insights that can assist in security assessments and vulnerability research.**
 
 ## 🚀 Features
 
@@ -14,20 +14,20 @@
 
 ## 🛠️ Installation
 
-#### To install GoScan, you need to have Go installed on your system. You can download Go from the official website: https://golang.org/dl/.
+#### To install dirgo, you need to have Go installed on your system. You can download Go from the official website: https://golang.org/dl/.
 
 #### Clone the repository and build the tool using the following commands:
 
 ```bash
-git clone https://github.com/tr41z/GoScan.git
-cd GoScan/cmd/main
+git clone https://github.com/tr41z/dirgo.git
+cd dirgo/cmd/main
 go build
 ```
 
 ## 📝 Usage
 
 ```bash
-./GoScan -u <URL> -w <wordlist> [options]
+./dirgo -u <URL> -w <wordlist> [options]
 Options:
 -u, --url <URL>: Target URL
 -w, --wordlist <wordlist>: Path to the wordlist file
@@ -38,15 +38,15 @@ Options:
 
 Example:
 ```bash
-./GoScan -u http://example.com:8080 -w wordlist.txt -t 20 -s 403 -o results.txt
+./dirgo -u http://example.com:8080 -w wordlist.txt -t 20 -s 403 -o results.txt
 ```
 
 ## ⚠️ Disclaimer
 
 ### Important Notice:
 
-#### Running GoScan against targets without explicit permission is illegal. Ensure you have proper authorization before using this tool on any system. The developers of GoScan are not responsible for any misuse or damage caused by this tool. Use it responsibly and ethically.
+#### Running dirgo against targets without explicit permission is illegal. Ensure you have proper authorization before using this tool on any system. The developers of dirgo are not responsible for any misuse or damage caused by this tool. Use it responsibly and ethically.
 
 ---
 
-*Thank you for using GoScan! Happy scanning and stay ethical!*
+*Thank you for using dirgo! Happy scanning and stay ethical!*
