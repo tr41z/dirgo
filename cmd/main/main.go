@@ -12,6 +12,7 @@ func main() {
 	var statusFlag = flag.Int("s", 200, "HTTP status code (e.g., 200 for OK)")
 	var wordlistFlag = flag.String("w", "", "Path to the wordlist file")
 	var threadsFlag = flag.Int("t", 5, "Number of concurrent threads")
+	var outputFlag = flag.String("o", "./results.txt", "Path for saving the results file (e.g., results.txt)")
 
 	flag.Parse()
 
@@ -26,5 +27,5 @@ func main() {
 	}
 
 	utils.PrintHeaders()
-	scanner.ScanForDirectories(*urlFlag, *wordlistFlag, *statusFlag, *threadsFlag)
+	scanner.ScanForDirectories(*urlFlag, *wordlistFlag, *statusFlag, *threadsFlag, *outputFlag)
 }
