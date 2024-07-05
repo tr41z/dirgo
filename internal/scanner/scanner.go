@@ -1,14 +1,15 @@
 package scanner
 
 import (
-	"GoScan/internal/utils"
-	"GoScan/pkg/config"
-	"fmt"
-	"log"
 	"net/http"
-	"os"
 	"sync"
 	"time"
+	"fmt"
+	"log"
+	"os"
+	
+	"GoScan/internal/utils"
+	"GoScan/pkg/config"
 )
 
 // Function responsible for scanning provided URL for directories included in provided wordlist

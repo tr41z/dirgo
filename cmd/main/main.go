@@ -1,10 +1,11 @@
 package main
 
 import (
-	"GoScan/internal/scanner"
-	"GoScan/internal/utils"
 	"flag"
 	"fmt"
+	
+	"GoScan/internal/scanner"
+	"GoScan/internal/utils"
 )
 
 func main() {
