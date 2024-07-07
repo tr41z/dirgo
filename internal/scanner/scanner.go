@@ -20,6 +20,10 @@ func ScanForDirectories(baseURL string, wordlist string, statusCode int, threads
 	var wg sync.WaitGroup
 	sem := make(chan struct{}, threads)
 
+	if err := os.Truncate(filePath, 0); err != nil {
+		log.Printf("Failed to truncate: %v", err)
+	}	
+
 	for _, payload := range payloads {
 		wg.Add(1)
 		go func(payload string) {
