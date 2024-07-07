@@ -21,7 +21,7 @@ func ScanForDirectories(baseURL string, wordlist string, statusCode int, threads
 	sem := make(chan struct{}, threads)
 
 	if err := os.Truncate(filePath, 0); err != nil {
-		log.Printf("Failed to truncate: %v", err)
+		// Ignore the error
 	}	
 
 	for _, payload := range payloads {
