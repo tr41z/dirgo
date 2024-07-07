@@ -1,7 +1,7 @@
 # 🎯 dirgo
 
 ```bash
-GoScan % make run
+GoScan % make run -u http://localhost:8080 -w wordlist.txt -t 20 -s 200 -o results.txt
 
 ======================================
                       
