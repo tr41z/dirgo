@@ -37,7 +37,7 @@ http://localhost:8080/.ssh                             299       200
 
 ## 🛠️ Installation
 
-#### To install dirgo, you need to have Go installed on your system. You can download Go from the official website: https://golang.org/dl/.
+#### To run dirgo, you need to have Go installed on your system. You can download Go from the official website: https://golang.org/dl/.
 
 #### Clone the repository and build the tool using the following commands:
 
