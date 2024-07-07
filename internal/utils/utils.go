@@ -29,6 +29,10 @@ func ConstructPayload(baseURL string, wordlist string) []string {
 	return payloads
 }
 
+func calculateLeft(wordlist string) string {
+	return ""
+}
+
 func PrintHeaders() {
 	config.Magenta.Printf("%-55s%-10s%-10s\n", "URL", "LENGTH", "STATUS_CODE\n-----------------------------------------------------------------------------")
 }
