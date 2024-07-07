@@ -40,5 +40,6 @@ func main() {
 	}
 
 	utils.PrintHeaders()
+	utils.CalculateLeft(*wordlistFlag)
 	scanner.ScanForDirectories(*urlFlag, *wordlistFlag, *statusFlag, *threadsFlag, *outputFlag)
 }

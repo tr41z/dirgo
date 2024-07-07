@@ -3,6 +3,7 @@ package utils
 import (
 	"GoScan/pkg/config"
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 )
@@ -29,8 +30,20 @@ func ConstructPayload(baseURL string, wordlist string) []string {
 	return payloads
 }
 
-func calculateLeft(wordlist string) string {
-	return ""
+func CalculateLeft(wordlist string) {
+	count := 0
+	file, err := os.Open(wordlist)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		count++
+		fmt.Println(count)
+	}	
 }
 
 func PrintHeaders() {
