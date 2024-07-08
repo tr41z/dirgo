@@ -33,7 +33,7 @@ http://localhost:8080/.ssh                             299       200
 ## 🚀 Features
 
 - High-speed scanning using concurrent requests
-- Customizable request headers
+- Customizable request flags
 - Wordlist-based enumeration
 - Simple and intuitive command-line interface
 - Supports HTTP and HTTPS
