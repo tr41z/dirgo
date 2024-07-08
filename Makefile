@@ -26,7 +26,7 @@ build-all: build-linux build-darwin build-windows
 build-and-run:
 	@mkdir -p $(OUTPUT_DIR)
 	@go build -o $(OUTPUT_DIR)/$(TOOL_NAME) $(MAIN_PACKAGE)
-	@$(OUTPUT_DIR)/$(TOOL_NAME) -u http://localhost:8080 -w ./common.txt -t 5 -s 200
+	@$(OUTPUT_DIR)/$(TOOL_NAME) -u http://localhost:8080 -w /Users/michael/common.txt -t 5 -s 200
 
 run:
-	@./$(OUTPUT_DIR)/$(TOOL_NAME) -u http://localhost:8080 -w ./common.txt -t 5 -s 200
+	@./$(OUTPUT_DIR)/$(TOOL_NAME)-darwin-amd64 -u http://localhost:8080 -w /Users/michael/common.txt -t 5 -s 200
