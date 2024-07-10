@@ -21,7 +21,7 @@ func main() {
 	config.Magenta.Println("© 2024 tr41z")
 
 	config.Magenta.Println("\nLanguage used: Golang")
-	config.Magenta.Print("Github Repo: https://github.com/tr41z/dirgo\n")
+	config.Magenta.Print("Github Repo: https://github.com/tr41z/dirgo \n")
 
 	config.Green.Print("================================================\n\n")
 	
