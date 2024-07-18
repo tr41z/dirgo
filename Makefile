@@ -1,10 +1,7 @@
-# Define the output directory for binaries
 OUTPUT_DIR := bin
 
-# Define the name of your tool
 TOOL_NAME := dirgo
 
-# Define the path to your main package
 MAIN_PACKAGE := ./cmd/main/main.go
 
 # Build for Linux
@@ -22,7 +19,7 @@ build-windows:
 # Build all targets
 build-all: build-linux build-darwin build-windows
 
-# Example build and run target
+# Build and run
 build-and-run:
 	@mkdir -p $(OUTPUT_DIR)
 	@go build -o $(OUTPUT_DIR)/$(TOOL_NAME) $(MAIN_PACKAGE)
