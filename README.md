@@ -1,5 +1,13 @@
 # 🎯 dirgo
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1956bdcd-43cb-4b35-82ee-ae394fc258cb" alt="dirgo" width="400" height="400"/>
+  <img src="https://github.com/user-attachments/assets/137f1e94-c304-437b-a521-509b3c2b7e5b" alt="dirgo-hack" width="400" height="400"/>
+</p>
+
+<br>
+<br>
+
 ```bash
 GoScan % make run
 
