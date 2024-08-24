@@ -8,6 +8,10 @@
 <br>
 <br>
 
+## ⚡ Introduction
+
+#### **dirgo is a powerful and efficient directory enumeration tool written in Go. It is designed to help security professionals identify hidden files and directories on web servers, providing insights that can assist in security assessments and vulnerability research.**
+
 ```bash
 GoScan % make run
 
@@ -33,10 +37,6 @@ http://localhost:8080/.config                          1031      200
 http://localhost:8080/.mysql_history                   2038      200       
 http://localhost:8080/.ssh                             299       200       
 ```
-
-## ⚡ Introduction
-
-#### **dirgo is a powerful and efficient directory enumeration tool written in Go. It is designed to help security professionals identify hidden files and directories on web servers, providing insights that can assist in security assessments and vulnerability research.**
 
 ## 🚀 Features
 
