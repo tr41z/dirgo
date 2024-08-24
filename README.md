@@ -5,8 +5,6 @@
   <img src="https://github.com/user-attachments/assets/137f1e94-c304-437b-a521-509b3c2b7e5b" alt="dirgo-hack" width="400" height="400"/>
 </p>
 
-<br>
-<br>
 
 ## ⚡ Introduction
 
