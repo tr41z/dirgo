@@ -26,14 +26,14 @@ Language used: Golang
 Github Repo: https://github.com/tr41z/dirgo
 ================================================
 
-URL                                                    LENGTH    STATUS_CODE
------------------------------------------------------------------------------
-http://localhost:8080/passwords                        1161      200       
-http://localhost:8080/index.html                       4177      200       
-http://localhost:8080/.cache                           373       200       
-http://localhost:8080/.config                          1031      200       
-http://localhost:8080/.mysql_history                   2038      200       
-http://localhost:8080/.ssh                             299       200       
+URL                                     LENGTH    STATUS_CODE
+-------------------------------------------------------------
+http://127.0.0.1:8080/.bash_history     1161      200       
+http://127.0.0.1:8080/.cache            445       200       
+http://127.0.0.1:8080/.config           1187      200       
+http://127.0.0.1:8080/.gitconfig        304       200       
+http://127.0.0.1:8080/.mysql_history    2038      200       
+http://127.0.0.1:8080/.ssh              299       200 
 ```
 
 ## 🚀 Features
