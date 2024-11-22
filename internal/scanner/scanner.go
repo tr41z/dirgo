@@ -39,7 +39,7 @@ func ScanForDirectories(baseURL string, wordlist string, statusCode int, threads
 			defer resp.Body.Close()
 
 			if resp.StatusCode == statusCode && statusCode != 0 {
-				config.Blue.Printf("%-55s%-10d%-10d\n", payload, int(resp.ContentLength), int(resp.StatusCode))
+				config.Blue.Printf("%-40s%-10d%-10d\n", payload, int(resp.ContentLength), int(resp.StatusCode))
 
 				// creatring results file with append mode
 				f, ferr := os.OpenFile(filePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
