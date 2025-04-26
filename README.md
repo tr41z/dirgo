@@ -11,7 +11,7 @@
 #### **dirgo is a powerful and efficient directory enumeration tool written in Go. It is designed to help security professionals identify hidden files and directories on web servers, providing insights that can assist in security assessments and vulnerability research.**
 
 ```bash
-GoScan % make run
+dirgo % make run
 
 ================================================
                       
