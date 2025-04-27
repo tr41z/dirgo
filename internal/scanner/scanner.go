@@ -8,14 +8,14 @@ import (
 	"log"
 	"os"
 	
-	"GoScan/internal/utils"
-	"GoScan/pkg/config"
+	"github.com/tr41z/dirgo/internal/utils"
+	"github.com/tr41z/dirgo/pkg/config"
 )
 
 // Function responsible for scanning provided URL for directories included in provided wordlist
-func ScanForDirectories(baseURL string, wordlist string, statusCode int, threads int, filePath string) {
+func Scan(baseURL string, wordlist string, statusCode int, threads int, filePath string, scanMode string) {
 	delay := 10 * time.Millisecond
-	payloads := utils.ConstructPayload(baseURL, wordlist)
+	payloads := utils.ConstructPayload(baseURL, wordlist, scanMode)
 
 	var wg sync.WaitGroup
 	sem := make(chan struct{}, threads)

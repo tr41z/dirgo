@@ -1,4 +1,4 @@
-module GoScan
+module github.com/tr41z/dirgo
 
 go 1.17
 
