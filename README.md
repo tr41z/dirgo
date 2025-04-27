@@ -8,7 +8,7 @@
 
 ## ⚡ Introduction
 
-#### **dirgo is a powerful and efficient directory enumeration tool written in Go. It is designed to help security professionals identify hidden files and directories on web servers, providing insights that can assist in security assessments and vulnerability research.**
+#### **dirgo is a powerful and efficient directory & subdomain enumeration tool written in Go. It is designed to help security professionals identify hidden files and directories on web servers, providing insights that can assist in security assessments and vulnerability research.**
 
 ```bash
 dirgo % make run
@@ -61,6 +61,7 @@ go build
 ```bash
 ./dirgo -u <URL> -w <wordlist> [options]
 Options:
+-m, --mode <mode>: Scan mode (`dir` or `sub`)
 -u, --url <URL>: Target URL
 -w, --wordlist <wordlist>: Path to the wordlist file
 -t, --threads <number>: Number of concurrent threads (default: 10)
@@ -70,7 +71,9 @@ Options:
 
 Example:
 ```bash
-./dirgo -u http://example.com:8080 -w wordlist.txt -t 20 -s 403 -o results.txt
+./dirgo dir -u http://example.com:8080 -w wordlist.txt -t 20 -s 403 -o results.txt
+
+./dirgo sub -u example.com -w subdomains.txt -t 20 -s 404 -o results.txt
 ```
 
 ## ⚠️ Disclaimer
